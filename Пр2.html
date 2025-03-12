@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пр2</title>
+</head>
+<body>
+    
+    <script>
+        let name = "Іван";
+        let city = name;
+        console.log(city);
+
+        let name2 = "Olga";
+        console.log(`привіт ${1}`); 
+        console.log(`привіт ${"name"}`);
+        console.log(`привіт ${name2}`); 
+
+        let a = "5";
+        let b = "13cvb";
+        let c = "12.9sxdcfgv";
+
+        console.log(typeof a); 
+        console.log(typeof b);
+        console.log(typeof c);
+
+        let numA = parseFloat(a); 
+        let numB = parseInt(b); 
+        let numC = parseFloat(c); 
+
+        console.log(numA, numB, numC); 
+
+        let result = (0.1 + 0.2).toFixed(1);
+        console.log(result);
+
+        let numbers = [20, 10, 50, 40];
+        let maxNumber = Math.max(...numbers);
+        console.log(maxNumber); 
+
+        let randomNumber = Math.random() * (4 - 2) + 2;
+        console.log(randomNumber);
+
+        const message = "Welcome to Bahamas!";
+        console.log(message.length);
+
+        console.log(message.toUpperCase());
+
+        let person = {}; 
+        person.name = "Іван"; 
+        person.age = 25; 
+        person.city = "Kyiv"; 
+        console.log(person); 
+
+        delete person.city; 
+        person.likeFlowers = true;
+        console.log(person); 
+
+        
+        for (let key in person) {
+            console.log(`${key}: ${person[key]}`);
+        }
+
+    </script>
+</body>
+</html>
+
